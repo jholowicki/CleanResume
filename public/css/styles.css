@@ -8,3 +8,12 @@ h3 {
 p {
     font-family: 'Open Sans', sans-serif;
 }
+.black-nav {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: black;
+  color: #fff;
+}

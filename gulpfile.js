@@ -11,7 +11,11 @@ const stripCssComments = require('gulp-strip-css-comments');
 
 
 gulp.task('css', () => {
-    return gulp.src([])
+    return gulp.src([
+      'node_modules/bootstrap/dist/css/bootstrap.min.css',
+      'public/css/body.css',
+      'public/css/lists.css'
+    ])
         .pipe(stripCssComments())
         .pipe(cleanCSS())
         .pipe(sourcemaps.write())
@@ -29,6 +33,6 @@ gulp.task('scripts', () => {
         .pipe(gulp.dest('public/dist'));
 });
 gulp.task('default', (done) => {
-    sync('css', 'scripts', done);
+    sync('css', done);
     //sync( 'css', done);
 });

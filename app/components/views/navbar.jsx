@@ -1,27 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Grid, Row, Col, Navbar, Nav, NavItem } from 'react-bootstrap';
 
-const navbar = React.createClass({
+
+const Navbar = React.createClass({
   render: function() {
     return (
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
-                    <Navbar.Brand>
+            <nav className="black-nav">
+
+                    <span className="brand">
                         <Link to="/">Clean Resume Services</Link>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav pullRight>
-                        <Link to="/login">Login</Link>
-                        <Link to="/logout">Sign-Up</Link>
-                        <NavItem eventKey={1} href="/login">Login</NavItem>
-                        <NavItem eventKey={2} href="/logout">Sign-Up</NavItem>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+                    </span>
+
+                <div>
+                    <ul className="pull-right">
+                        <li><Link to="/login">Login</Link></li>
+                      <li>  <Link to="/logout">Sign-Up</Link> </li>
+                    </ul>
+                </div>
+            </nav>
         );
   }
 });
-export default navbar;
+export default Navbar;
