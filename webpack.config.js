@@ -4,9 +4,9 @@ const path = require('path');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 
 module.exports = {
-    context: path.join(__dirname, "src"),
+    context: path.join(__dirname, "app"),
     devtool: debug ? "inline-sourcemap" : null,
-    entry: "./main.jsx",
+    entry: "./app.js",
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
