@@ -31,6 +31,7 @@
     "gulp-sourcemaps": "^2.4.1",
     "gulp-strip-css-comments": "^1.2.0",
     "gulp-util": "^3.0.8",
+    "material-ui": "^0.17.1",
     "mongoose": "^4.7.3",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
