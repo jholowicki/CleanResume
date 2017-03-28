@@ -1,11 +1,13 @@
 import React from 'react';
-import { Grid, Row, Col, Navbar, Nav } from 'react-bootstrap';
+import { Grid, Row, Col, Navbar, Nav, NavItem } from 'react-bootstrap';
 
-const navbarInstance = (
+const navbar = React.createClass({
+  render: function() {
+    return (
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a Linkto="/" >Clean Resume Services</a>
+                        <a Linkto="/">Clean Resume Services</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -17,5 +19,6 @@ const navbarInstance = (
                 </Navbar.Collapse>
             </Navbar>
         );
-
+  }
+});
 export default navbar;
