@@ -12,21 +12,7 @@ import LoginContainer from './components/containers/log-in-container';
 export default (
   <Router history={browserHistory}>
     <Route component={MainLayout}>
-      <Route path="/" component= {welcome} />
-
-        <Route path="users">
-          <Route component={SearchLayout}>
-            <IndexRoute component={UserListContainer} />
-          </Route>
-          <Route path=":userId" component={UserProfileContainer} />
-        </Route>
-
-        <Route path="widgets">
-          <Route component={SearchLayout}>
-            <IndexRoute component={WidgetListContainer} />
-          </Route>
-        </Route>
-
+      <Route path="/" component={welcome} />
     </Route>
-  </Router>
+  </Router >
 );

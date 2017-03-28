@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 
 // Stateless Functional Component for page layout.
 // Structure:
+//Bootstrap Grid
 // Stateful Nav Bar
 // Static Welcome
 // Stateful Resume
