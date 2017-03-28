@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import navbar from '../views/navbar';
 
 // Stateless Functional Component for page layout.
 // Structure:
@@ -13,7 +14,7 @@ export default function(props) {
   return (
     <div className="app">
       <header className="primary-header"></header>
-
+      <navbar />
       <li><Link to="/login" activeClassName="active">Login</Link></li>
       <li><Link to="/signup" activeClassName="active">Logout</Link></li>
       <li><Link to="/logout" activeClassName="active">Signup</Link></li>
