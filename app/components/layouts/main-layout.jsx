@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Navbar from '../views/navbar';
 import Welcome from '../Welcome';
+import Footer from '../views/Footer';
 // Stateless Functional Component for page layout.
 // Structure:
 //Bootstrap Grid
@@ -17,7 +18,7 @@ export default function (props) {
       <main>
         <div className="row container-fluid">
           <Welcome />
-          
+          <Footer />
         </div>
       </main>
     </div>
