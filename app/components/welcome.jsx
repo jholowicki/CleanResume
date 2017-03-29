@@ -7,10 +7,10 @@ const Welcome = React.createClass({
       <div className="row extra">
         <div className="col-md-4"></div>
         <div className="col-md-4">
-          <div className="welcome-page container">
+          <span>
             <h1>Clean Resume Services</h1>
             <p>This is the welcome page selling our services.</p>
-          </div>
+          </span>
 
         </div>
         <div className="col-md-4"></div>

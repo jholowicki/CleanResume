@@ -15,10 +15,10 @@ export default function (props) {
     <div className="app">
       <Navbar />
       <main>
-        <div className="row">
-          {props.children}
+        <div className="row container-fluid">
+          <Welcome />
+          
         </div>
-
       </main>
     </div>
   );
