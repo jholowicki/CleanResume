@@ -1,27 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { Grid, Row, Col, Navbar, Nav, NavItem } from 'react-bootstrap';
 
-const navbar = React.createClass({
+const Navbar = React.createClass({
   render: function() {
     return (
-            <Navbar inverse collapseOnSelect>
-                <Navbar.Header>
-                    <Navbar.Brand>
-                        <Link to="/">Clean Resume Services</Link>
-                    </Navbar.Brand>
-                    <Navbar.Toggle />
-                </Navbar.Header>
-                <Navbar.Collapse>
-                    <Nav pullRight>
-                        <Link to="/login">Login</Link>
-                        <Link to="/logout">Sign-Up</Link>
-                        <NavItem eventKey={1} href="/login">Login</NavItem>
-                        <NavItem eventKey={2} href="/logout">Sign-Up</NavItem>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
+        <nav id="mainNav" className="navbar navbar-default navbar-fixed-top">
+        <div className="container-fluid">
+            <div className="navbar-header">
+                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span className="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <Link to="/" className="navbar-brand page-scroll" >Clean Resume Services</Link>
+            </div>
+
+            <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul className="nav navbar-nav navbar-right">
+                    <li>
+                        <Link className="page-scroll" to="/login" >Login</Link>
+                    </li>
+                    <li>
+                        <Link className="page-scroll" to="/signup">Sign-Up</Link>
+                    </li>
+                    <li>
+                        <Link className="page-scroll" to="/logout" >Logout</Link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
         );
   }
 });
-export default navbar;
+export default Navbar;
