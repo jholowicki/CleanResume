@@ -8,7 +8,7 @@ const Navbar = React.createClass({
         <div className="container-fluid">
             <div className="navbar-header">
                 <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span className="sr-only">Toggle navigation</span> Menu <i className="fa fa-bars"></i>
                 </button>
                 <Link to="/" className="navbar-brand page-scroll" >Clean Resume Services</Link>
             </div>

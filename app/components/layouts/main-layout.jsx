@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Navbar from '../views/navbar';
-
+import Welcome from '../Welcome';
 // Stateless Functional Component for page layout.
 // Structure:
 //Bootstrap Grid
@@ -10,13 +10,16 @@ import Navbar from '../views/navbar';
 // Stateful Resume
 // Stateful User Drafts
 // Static Footer
-export default function(props) {
+export default function (props) {
   return (
     <div className="app">
       <Navbar />
       <main>
-        {props.children}
+        <div className="row">
+          {props.children}
+        </div>
+
       </main>
     </div>
-    );
+  );
 }
