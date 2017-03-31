@@ -11,6 +11,10 @@ body {
     height: 100%
 }
 
+.divHeight {
+    height: 100%;
+}
+
 .linksy {
     font-size: 36px !important;
 }
@@ -97,7 +101,7 @@ body {
 .resume_content_wrap,
 .resume_view_content_wrap {
     background-color: #fff;
-    border: 1px solid #bbb;
+    border: 1px solid black;
     min-height: 1200px
 }
 

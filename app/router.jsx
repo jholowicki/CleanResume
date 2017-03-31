@@ -6,7 +6,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import MainLayout from './components/layouts/main-layout';
 
 // Pages
-import welcome from './components/welcome';
+import Welcome from './components/Welcome';
 import SignUpContainer from './components/containers/sign-up-container';
 import LoginContainer from './components/containers/log-in-container';
 
@@ -14,7 +14,7 @@ export default (
   
   <Router history={browserHistory}>
     <Route component={MainLayout}>
-      <Route path="/" component={welcome} />
+      <Route path="/" component={Welcome} />
     </Route>
   </Router >
 );
