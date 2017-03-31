@@ -1,14 +1,664 @@
-.h1,
-h1,
-h2,
-h3 {
-    font-family: 'Raleway Bold', Open Bold !important;
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #E4E0EE;
+    color: #4E2A84;
+    font-weight: 400;
+    min-width: 875px;
+    height: 100%
 }
 
-p {
-    font-family: 'Open Sans', sans-serif !important;
+.linksy {
+    font-size: 36px !important;
 }
 
-.extra {
-    margin-top: 50px;
+.mr_container_wrap {
+    height: 675px
+}
+
+.mr_container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden
+}
+
+.resume_container {
+    margin: 50px 10% 100px 10%
+}
+
+.resume_container .form-control {
+    color: #4E2A84;
+}
+
+.resume_outer_wrap {
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative
+}
+
+.dummy_input {
+    background-color: #E4E0EE;
+    color: #E4E0EE;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    display: none
+}
+
+.name_input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px!important
+}
+
+.res_head_input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px!important
+}
+
+.desc_input {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px!important
+}
+
+.resume_container a {
+    color: #401F68;
+    text-decoration: none
+}
+
+.site_links_wrap {
+    position: fixed;
+    left: 10px;
+    top: 50px;
+    width: 150px
+}
+
+.site_links {
+    padding: 20px 0 20px 0;
+    line-height: 20px
+}
+
+.site_links a {
+    color: #aaa;
+    outline: 0
+}
+
+.site_links a:hover {
+    color: #401F68;
+}
+
+.resume_content_wrap,
+.resume_view_content_wrap {
+    background-color: #fff;
+    border: 1px solid #bbb;
+    min-height: 1200px
+}
+
+.resume_view_content_wrap {
+    font-size: 16px;
+    text-align: left;
+    color: #401F68;
+    position: relative
+}
+
+.resume_content {
+    margin: 50px;
+    text-align: center;
+    position: relative
+}
+
+.mr_col,
+.mr_row {
+    padding: 0!important;
+    margin: 0!important
+}
+
+.mr_input,
+.mr_text_area {
+    border: 0!important;
+    box-shadow: none!important
+}
+
+.mr_text_area {
+    resize: vertical
+}
+
+.mr_input.form-control {
+    font-size: 16px;
+    padding: 0;
+    padding-left: 6px
+}
+
+.mr_uneditable_input {
+    font-size: 16px;
+    padding: 6px;
+    min-height: 34px;
+    color: #4E2A84;
+}
+
+.name_input,
+.mr_uneditable_input,
+.res_head_input,
+.desc_input,
+.uneditable,
+.editable {
+    word-wrap: break-word
+}
+
+.res_head_input {
+    height: 32px
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #ccc
+}
+
+.form-control::-moz-placeholder {
+    color: #ccc;
+    opacity: 1
+}
+
+.form-control::-moz-placeholder {
+    color: #ccc;
+    opacity: 1
+}
+
+.form-control:-ms-input-placeholder {
+    color: #ccc
+}
+
+.medium-editor-toolbar-anchor-input::-webkit-input-placeholder {
+    color: #fff
+}
+
+.medium-editor-toolbar-anchor-input::-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+.medium-editor-toolbar-anchor-input::-moz-placeholder {
+    color: #fff;
+    opacity: 1
+}
+
+.medium-editor-toolbar-anchor-input:-ms-input-placeholder {
+    color: #fff
+}
+
+input.mr_center {
+    text-align: center
+}
+
+.line_separator {
+    border-bottom: 1px solid #ccc;
+    height: 1px
+}
+
+.work_exp_wrap .mr_input {
+    background-color: #f8f8f8!important
+}
+
+.separator {
+    height: 40px
+}
+
+.resume_cat_headings {
+    text-align: left;
+    font-size: 18px;
+    color: #ccc;
+    padding-bottom: 3px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700
+}
+
+.resume_cat_headings.active {
+    color: #4E2A84;
+}
+
+.resume_container table {
+    border-spacing: 0;
+    border-collapse: collapse
+}
+
+.resume_cat_wrap [date-picker] td {
+    border-bottom: 0!important
+}
+
+.resume_cat_wrap td {
+    border-bottom: 1px solid #ccc!important
+}
+
+.resume_cat_wrap {
+    position: relative;
+    width: 100%
+}
+
+.add_more_icon,
+.add_more_exp_icon {
+    position: absolute;
+    bottom: -8px;
+    right: -25px;
+    font-size: 25px
+}
+
+.add_more_exp_icon {
+    bottom: 15px
+}
+
+.add_more_icon:hover,
+.add_more_exp_icon:hover {
+    cursor: pointer;
+    color: #4E2A84;
+}
+
+.mr_b {
+    border: 1px solid #ccc
+}
+
+.mr_bl {
+    border-left: 1px solid #ccc
+}
+
+.mr_modal .modal-dialog {
+    margin: auto;
+    margin-top: 10%
+}
+
+.mr_modal .modal-content {
+    background-color: transparent;
+    text-align: center;
+    box-shadow: none;
+    border: 0
+}
+
+.mr_modal .modal-header-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #401F68;
+}
+
+.mr_modal .modal-backdrop {
+    background-color: #E4E0EE;
+    opacity: .8
+}
+
+.mr_modal_heading {
+    font-weight: bold;
+    font-size: 24px;
+    color: #4E2A84;
+}
+
+.mr_modal .close {
+    font-size: 32px
+}
+
+.social_login_btn {
+    border-radius: 0!important;
+    max-width: 250px;
+    min-width: 250px;
+    font-size: 16px;
+    padding: 5px
+}
+
+.social_login_btn_google {
+    background-color: #d34836!important
+}
+
+.social_login_btn_fb {
+    background-color: #3b5998!important
+}
+
+.social_login_btn_tw {
+    background-color: #55acee!important
+}
+
+.social_login_btn_google,
+.social_login_btn_fb,
+.social_login_btn_tw {
+    opacity: .8
+}
+
+.social_login_btn_google:hover,
+.social_login_btn_fb:hover,
+.social_login_btn_tw:hover {
+    opacity: 1
+}
+
+.mr_social_icon_separator {
+    float: left;
+    border-right: 1px solid #e2e2e2;
+    padding-right: 10px;
+    height: 30px;
+    padding: 5px 8px 0 3px
+}
+
+.social_login_text {
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 30px
+}
+
+.mr_social_icon {
+    font-size: 22px;
+    line-height: 22px;
+    width: 25px
+}
+
+.br_btn {
+    margin-right: 50px;
+    margin-left: 25px;
+    border-radius: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+    line-height: 1em;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    opacity: 1
+}
+
+.br_btn:hover {
+    color: #fff;
+    opacity: .9
+}
+
+.br_btn:hover,
+.br_btn:focus,
+.br_btn.focus {
+    color: #fff;
+    box-shadow: none;
+    outline: none!important
+}
+
+.mr_preview_btn {
+    background-color: #bcaaa4
+}
+
+.mr_save_btn {
+    background-color: #8c9eff
+}
+
+.mr_share_btn {
+    background-color: #607d8b
+}
+
+.mr_edit_btn {
+    background-color: #bcaaa4
+}
+
+.mr_pdf_btn {
+    background-color: #ef5350
+}
+
+.mr_regenerate_link_btn {
+    background-color: #401F68;
+    margin-right: 0
+}
+
+.brand_btn {
+    background-color: #401F68;
+    font-size: 36px;
+    font-style: bold;
+}
+
+.editable,
+.uneditable {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: left;
+    color: #4E2A84;
+    font-size: 14px;
+    outline: 0;
+    margin: 6px
+}
+
+.uneditable {
+    min-height: 15px
+}
+
+.editable p,
+.editable ul,
+.editable ol,
+.uneditable p,
+.uneditable ul,
+.uneditable ol {
+    margin: 0 6px!important
+}
+
+.my_res_link {
+    margin-left: -15px
+}
+
+.mr_cur_working {
+    background-color: #401F68;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    height: 30px;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 3px
+}
+
+.last_updated_msg {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    font-size: 11px;
+    color: #aaa
+}
+
+.medium-editor-toolbar-anchor-input {
+    font-family: 'Raleway', sans-serif!important;
+    font-weight: 400
+}
+
+.mr_line_icon {
+    font-size: 18px
+}
+
+.site_desc_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    top: 0;
+    z-index: 100
+}
+
+.close_desc_container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px
+}
+
+#intercom-container {
+    display: none
+}
+
+.mr_alerts {
+    height: 1600px;
+    width: 100%;
+    position: absolute;
+    top: -120px;
+    z-index: 100;
+    text-align: center
+}
+
+.mr_alerts p {
+    margin: 0;
+    padding: 0
+}
+
+.mr_alert-message.danger,
+.mr_alert-message.danger:hover {
+    color: #fff
+}
+
+.mr_alert-message.danger,
+.mr_alert-message.error {
+    background-color: #f8bbd0
+}
+
+.close {
+    float: right;
+    color: #000;
+    font-size: 36px;
+    font-weight: bold
+}
+
+.close:hover {
+    color: #000;
+    text-decoration: none;
+    opacity: .4
+}
+
+.mr_alert-message {
+    position: relative;
+    padding: 7px 15px;
+    color: #fff;
+    font-size: 20px;
+    max-width: 450px;
+    margin: 0 auto
+}
+
+.mr_alert-message .close {
+    margin-top: 0
+}
+
+.mr_alert-message a {
+    font-weight: bold;
+    color: #404040;
+    text-decoration: none;
+    line-height: 26px
+}
+
+.work_exp_table {
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    width: 100%
+}
+
+.edit-buttons-wrapper {
+    position: absolute;
+    right: -50px;
+    top: 50px
+}
+
+.edit-buttons-inner-wrapper {
+    width: 45px;
+    margin-left: -50px
+}
+
+.edit-buttons-inner-wrapper i {
+    cursor: pointer;
+    margin-bottom: 5px;
+    color: #bbb;
+    font-size: 25px
+}
+
+.edit-buttons-inner-wrapper i:hover {
+    color: #401F68;
+}
+
+.key_skiils_level {
+    height: 34px;
+    position: absolute
+}
+
+.resume_view_content_wrap .key_skiils_level td {
+    cursor: default
+}
+
+.key_skiils_level td {
+    cursor: pointer;
+    color: #ddd;
+    width: 9%;
+    border-bottom: none!important;
+    font-size: 14px
+}
+
+.key_skiils_level td.selected_level {
+    color: #fff
+}
+
+.key_skill_level_over {
+    position: absolute;
+    width: 0;
+    background-color: #bbb;
+    height: 100%;
+    -webkit-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+    height: 35px;
+    opacity: .6
+}
+
+.key_skill_level_over2 {
+    position: absolute;
+    width: 100%;
+    background-color: #f8f8f8;
+    height: 100%
+}
+
+.key_skill_level_heading {
+    height: 35px;
+    left: 187px;
+    line-height: 30px;
+    position: absolute;
+    top: -28px;
+    width: 100%;
+    left: 0
+}
+
+.key_skill_level_heading td {
+    color: #bbb;
+    border-bottom: none!important;
+    font-size: 14px
+}
+
+.key_skill_level_heading table {
+    height: 32px
+}
+
+.tooltip-inner {
+    color: #fff!important;
+    background-color: #3a4a5a!important;
+    word-wrap: break-word;
+    max-width: 230px!important;
+    font-size: 14px;
+    font-family: 'Roboto Slab', sans-serif
+}
+
+.tooltip.left .tooltip-arrow {
+    border-left-color: #3a4a5a!important
+}
+
+.tooltip.right .tooltip-arrow {
+    border-right-color: #3a4a5a!important
+}
+
+.tooltip.bottom .tooltip-arrow {
+    border-bottom-color: #3a4a5a!important
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #3a4a5a!important
+}
+
+.tooltip {
+    z-index: 10000!important
 }
