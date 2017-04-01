@@ -6,7 +6,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import MainLayout from './components/layouts/main-layout';
 
 // Pages
-import Welcome from './components/Welcome';
+import Welcome from './components/views/Welcome';
 import SignUpContainer from './components/containers/sign-up-container';
 import LoginContainer from './components/containers/log-in-container';
 
