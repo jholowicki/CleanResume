@@ -25,7 +25,6 @@ export default class Welcome extends React.Component {
                     <a target="_blank " href="googleform.html " className="linksy ">Feedback</a>
                 </div>
                 <span className="linksy">Login</span>
-                <span className="linksy">Logout</span>
             </div>
             <div className="resume_outer_wrap ">
                 <div>
